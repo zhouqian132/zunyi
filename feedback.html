@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .one:hover,
+    .two {
+      color: #31507c;
+      text-decoration: underline;
+    }
+    .icon-jiantou {
+      font-size:15px;
+    }
+  </style>
+</head>
+
+<body class="index-body">
+  <!-- 头部 -->
+  <section class="container-fluid main-header">
+  </section>
+  <div class="main-banner">
+    <div class="banner-img">
+      <img src="http://111.231.195.149/public/uploads/00000000/banner-1.jpg">
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="position-list">
+            <span class="first">当前位置：</span>
+            <span>
+								<a class="one" href="index.html">首页</a> <i class="iconfont icon-shuangjiantouyou"></i>
+								<span class="last">意见反馈</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <h3><i class="fa fa-envelope-open-o" aria-hidden="true"></i> 互动渠道</h3>
+          <p class="red-8 margin-left-15">我们保证 严格保护你的私人信息</p>
+          <p class="red-8 margin-left-15">信访人信息（注意：请填写电子邮箱，以方便我们向您反馈处理信息）</p>
+          <form class="form regform linkform" id="info-form" enctype="multipart/form-data" name="gform">
+            <input class="form-input" type="hidden" name="status" value="1">
+            <fieldset class="form-field">
+              <div class="form-field-wrap">
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">问题类别</label>
+                    <select class="form-input edsel" type="select" name="type" tabindex="240" value="3">
+      												<option value="1">办事咨询</option>
+      												<option value="2">网上投诉</option>
+      												<option value="3">我要建议</option>
+      												<option value="4">领导信箱</option>
+      											</select>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">姓名</label>
+                    <input class="form-input" type="text" name="name">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">联系电话</label>
+                    <input class="form-input" type="text" name="phone">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">电子邮件</label>
+                    <input class="form-input" type="text" name="email">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">联系地址</label>
+                    <input class="form-input" type="text" name="address">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">主题</label>
+                    <input class="form-input" type="text" name="theme">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-wrap">
+                    <label class="form-label">反馈内容</label>
+                    <textarea class="form-input" type="textarea" name="content" data-reg="noNull" tabindex="240"></textarea>
+                  </div>
+                </div>
+                <footer class="block btn-wrap">
+                  <div class="col-xs-12  margin-top-10">
+                    <button type="button" class="edbtn feedFormBtn width-45" data-num="4"><i class="fa fa-upload" aria-hidden="true"></i> 提交数据</button>
+                  </div>
+                </footer>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="bg-grey-1 margin-top-20">
+            <div class="column-list">
+              <h5>栏目导航</h5>
+              <ul class="column-ul">
+                <li>
+                  <a href="feedback.html?type=1" title="" target="_self">办事咨询<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a href="feedback.html?type=2" title="" target="_self">网上投诉<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a href="feedback.html?type=3" title="" target="_self">我要建议<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a href="feedback.html?type=4" title="" target="_self">领导信箱<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="recommend-list">
+              <h5>稿件内容</h5>
+              <ul class="recommend-ul">
+                <li><a href="collist.html?col=12" title="" target="_self">最新资讯</a></li>
+                <li><a href="collist.html?col=17" title="" target="_self">经典病案</a></li>
+                <li><a href="collist.html?col=18" title="" target="_self">经典课件</a></li>
+                <li><a href="collist.html?col=19" title="" target="_self">专家视角</a></li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>投稿方式</h5>
+              <ul class="contact-ul">
+                <li>gzjhbptjs2017@163.com</li>
+                <li>gzjhbptjs@126.com</li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>联系我们</h5>
+              <ul class="contact-ul">
+                <li>遵义医学院附属医院</li>
+                <li>呼吸二科结核病区</li>
+                <li>电话：0851-28609190</li>
+                <li>地址：贵州省遵义市大连路149号</li>
+              </ul>
+            </div>
+            <div class="margin-top-40">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer">
+    <div class="main-footer-div">
+      Copyright © 2018 遵义医学院附属医院 All Rights Reserved.&nbsp;黔ICP备18005098号&nbsp; 技术支持：
+      <a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a>
+    </div>
+  </div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/feedback.js" type="text/javascript" charset="utf-8"></script>
+<script src="./layer/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./css/pagination.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .listwrap {
+      clear: both;
+      display: table;
+      width: 100%;
+      margin-bottom: 10px;
+      overflow: auto;
+    }
+
+    .listwrap:after,
+    .listwrap:before {
+      clear: both;
+      display: table;
+      content: " ";
+    }
+
+    .listwrap .list-left {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .listwrap .list-right {
+      display: table-cell;
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+      padding-left: 10px;
+    }
+
+    .listwrap .list-main {
+      position: relative;
+      width: 100%;
+    }
+
+    .listwrap .list-main a {
+      display: block;
+      width: 100%;
+      height: 24px;
+      line-height: 20px;
+      overflow: hidden;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .listwrap .list-main time {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .listwrap .list-main .summary {
+      height: 176px;
+      overflow: hidden;
+      font-size: 13px;
+      line-height: 20px;
+      color: #666;
+    }
+
+    .width-zjimg {
+      width: 150px;
+    }
+
+    .list-zjimg {
+      width: 150px;
+      height: 200px;
+    }
+
+    .iconfont {
+      font-size: inherit;
+    }
+
+    .one:hover, .two:hover {
+      color: #31507c;
+      text-decoration: underline;
+    }
+
+    .pagination li.active {
+      background: #efefef;
+      color: #1c7bc0;
+    }
+
+    .pagination ul li {
+      padding: 0 10px;
+      vertical-align: top;
+      display: inline-block;
+      font-size: 16px;
+      min-width: 40px;
+      min-height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #ffffff;
+      color: #999;
+      margin: 0 1px;
+      border: 1px solid #999;
+    }
+
+    .pagination ul li:hover {
+      color: #fff;
+      background: #1c7bc0;
+    }
+
+    #pagination ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body class="index-body">
+  <!-- 头部 -->
+  <section class="container-fluid main-header">
+  </section>
+  <div class="main-banner">
+    <div class="banner-img">
+      <img src="http://111.231.195.149/public/uploads/00000000/banner-j.jpg">
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="position-list">
+            <span class="first">当前位置：</span>
+            <span>
+								<a class="one" href="index.html">首页</a> <i class="iconfont icon-shuangjiantouyou"></i>
+								<span class="last">视频宣传</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <div class="mainlist-wrap margin-horizontal-0">
+            <ul class="listtwo" id="collist">
+              <!-- <li class="li">
+                <div class="content"> <img src="http://111.231.195.149:8080/jhbpt/upload/files/20180816150955kgyvPjsA.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>结核病的治疗</h3>
+                    <p>结核病的治疗</p> <a href="videoinfo.html?id=8a808090653612910165418e5def0003" target="_blank">详情</a> </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="content"> <img src="../public/uploads/00000000/new-icon2.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>结核病的治疗</h3>
+                    <p>结核病的治疗</p> <a href="videoinfo.html?id=8a808090652324270165233137180001" target="_blank">详情</a> </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="content"> <img src="../public/uploads/00000000/new-icon3.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>遵医附院白衣风采——手术室里的“月亮姐姐”</h3>
+                    <p>遵医附院白衣风采——手术室里的“月亮姐姐”</p> <a href="videoinfo.html?id=8a808090606fda8e01606fda8ec70000" target="_blank">详情</a> </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="content"> <img src="http://111.231.195.149:8080/jhbpt/upload/files/20171221210757ZMisOAYp.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>遵医附院名医访谈——庹必光：正确认识消化道癌症</h3>
+                    <p>遵医附院名医访谈——庹必光：正确认识消化道癌症</p> <a href="videoinfo.html?id=8a808090606e38bc01606e3ab2ef0001" target="_blank">详情</a> </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="content"> <img src="../public/uploads/00000000/new-icon5.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>遵医附院名医访谈——刘达兴：了解主动脉夹层</h3>
+                    <p>遵医附院名医访谈——刘达兴：了解主动脉夹层</p> <a href="videoinfo.html?id=8a808090606df1c201606e009435001d" target="_blank">详情</a> </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="content"> <img src="http://111.231.195.149:8080/jhbpt/upload/files/20171221210927yA4jCRec.jpg" alt="">
+                  <div class="list-main list-small">
+                    <h3>遵医附院医疗资讯——器官捐献</h3>
+                    <p>遵医附院医疗资讯——器官捐献</p> <a href="videoinfo.html?id=8a808090606db78401606de08f3c0032" target="_blank">详情</a> </div>
+                </div>
+              </li> -->
+            </ul>
+            <div class="page-wrap" data-nowpage="1" data-pagenum="6" name="collist">
+              <div class="box">
+                <div id="pagination" class="pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="bg-grey-1 margin-top-20">
+            <div class="column-list">
+              <h5>栏目导航</h5>
+              <ul class="column-ul">
+                <li>
+                  <a href="videolist.html?col=1" title="学术讲座" target="_self">学术讲座<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a href="videolist.html?col=2" title="宣传视频" target="_self">宣传视频<span class="pull-right"><i class="iconfont icon-jiantou" aria-hidden="true"></i></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="recommend-list">
+              <h5>稿件内容</h5>
+              <ul class="recommend-ul">
+                <li><a href="collist.html?col=1" title="" target="_self">最新资讯</a></li>
+                <li><a href="WeChat.html?col=1" title="" target="_self">经典病案</a></li>
+                <li><a href="WeChat.html?col=2" title="" target="_self">经典课件</a></li>
+                <li><a href="WeChat.html?col=3" title="" target="_self">专家视角</a></li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>投稿方式</h5>
+              <ul class="contact-ul">
+                <li>gzjhbptjs2017@163.com</li>
+                <li>gzjhbptjs@126.com</li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>联系我们</h5>
+              <ul class="contact-ul">
+                <li>遵义医学院附属医院</li>
+                <li>呼吸二科结核病区</li>
+                <li>电话：0851-28609190</li>
+                <li>地址：贵州省遵义市大连路149号</li>
+              </ul>
+            </div>
+            <div class="margin-top-40">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer">
+    <div class="main-footer-div">
+      Copyright © 2018 遵义医学院附属医院 All Rights Reserved.&nbsp;黔ICP备18005098号&nbsp; 技术支持：
+      <a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a>
+    </div>
+  </div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/pagination.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/videolist.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>

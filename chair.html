@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/pagination.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .one:hover,
+    .two:hover {
+      color: #31507c;
+      text-decoration: underline;
+    }
+    .pagination li.active {
+      background: #efefef;
+      color: #1c7bc0;
+    }
+
+    .pagination ul li {
+      padding: 0 10px;
+      vertical-align: top;
+      display: inline-block;
+      font-size: 16px;
+      min-width: 40px;
+      min-height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #ffffff;
+      color: #999;
+      margin: 0 1px;
+      border: 1px solid #999;
+    }
+
+    .pagination ul li:hover {
+      color: #fff;
+      background: #1c7bc0;
+    }
+
+    #pagination ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .icon-liulan {
+      margin-left: 20px;
+    }
+
+    .icon-shijian, .icon-liulan {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="index-body">
+  <!-- 头部 -->
+  <section class="container-fluid main-header">
+  </section>
+  <div class="main-banner">
+    <div class="banner-img">
+      <img src="http://111.231.195.149/public/uploads/00000000/banner-h.jpg">
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="position-list">
+            <span class="first">当前位置：</span>
+            <span>
+								<a class="one" href="index.html">首页</a> <i class="iconfont icon-shuangjiantouyou"></i>
+								<span class="last">学术讲座</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <div class="mainlist-wrap margin-horizontal-0">
+            <ul class="listsix" id="collist">
+              <!-- <li class="li">
+                <div class="content">
+                  <div class="list-left"> <a href="colinfo.html?col=a&amp;id=8a80809066596d8b01666250c4320009"><img src="http://111.231.195.149:8080/jhbpt/upload/files/201810111649121VJvZIxq.jpg" alt=""></a> </div>
+                  <div class="list-main"> <a href="colinfo.html?col=a&amp;id=8a80809066596d8b01666250c4320009"><h3>耐药结核病诊治进展论坛</h3></a> <time><i class="iconfont icon-shijian"></i> 2018-10-11 16:49:12				<i class="iconfont icon-liulan"></i> 56			</time>
+                    <p>耐药结核病诊治进展论坛耐药结核病诊治进展论坛<a href="colinfo.html?col=a&amp;id=8a80809066596d8b01666250c4320009">[详情]</a> </p>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+            <div class="page-wrap" data-nowpage="1" data-pagenum="10" name="collist">
+              <div class="box">
+                <div id="pagination" class="pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="bg-grey-1 margin-top-20">
+            <div class="recommend-list">
+              <h5>稿件内容</h5>
+              <ul class="recommend-ul">
+                <li><a href="collist.html?col=1" title="" target="_self">最新资讯</a></li>
+                <li><a href="WeChat.html?col=1" title="" target="_self">经典病案</a></li>
+                <li><a href="WeChat.html?col=2" title="" target="_self">经典课件</a></li>
+                <li><a href="WeChat.html?col=3" title="" target="_self">专家视角</a></li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>投稿方式</h5>
+              <ul class="contact-ul">
+                <li>gzjhbptjs2017@163.com</li>
+                <li>gzjhbptjs@126.com</li>
+              </ul>
+            </div>
+            <div class="contact-list">
+              <h5>联系我们</h5>
+              <ul class="contact-ul">
+                <li>遵义医学院附属医院</li>
+                <li>呼吸二科结核病区</li>
+                <li>电话：0851-28609190</li>
+                <li>地址：贵州省遵义市大连路149号</li>
+              </ul>
+            </div>
+            <div class="margin-top-40">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer">
+    <div class="main-footer-div">
+      Copyright © 2018 遵义医学院附属医院 All Rights Reserved.&nbsp;黔ICP备18005098号&nbsp; 技术支持：
+      <a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a>
+    </div>
+  </div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/pagination.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/chair.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>

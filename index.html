@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    #shareList,
+    #trainList,
+    #wechatList,
+    #artilList {
+      padding-left: 5px
+    }
+
+    #shareList li,
+    #trainList li,
+    #wechatList li,
+    #artilList li {
+      background: url(http://111.231.195.149/public/static/img/dot.png) 0 15px no-repeat;
+      padding-left: 20px;
+      overflow: hidden;
+    }
+
+    .index-main-ul .index-main-a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .index-link-ul li:hover {
+      text-decoration: underline;
+    }
+
+    .icon-gengduo-2 {
+      font-size: 30px
+    }
+
+    @media (min-width:300px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+      .swiper-slide {
+        background-size: 100%;
+        background-repeat: no-repeat
+      }
+    }
+
+    @media (min-width:400px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+    }
+
+    @media (min-width:500px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+    }
+
+    @media (min-width:600px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+    }
+
+    @media (min-width:768px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+    }
+
+    @media (min-width:992px) {
+      .swiper-button-white {
+        display: none;
+      }
+      .gallery-thumbs {
+        display: none;
+      }
+    }
+
+    @media (min-width:1200px) {
+      .swiper-button-white {
+        display: block;
+      }
+      .gallery-thumbs {
+        display: block;
+      }
+
+    }
+
+    @media (min-width:1600px) {
+      .swiper-button-white {
+        display: block;
+      }
+      .gallery-thumbs {
+        display: block;
+      }
+
+    }
+
+    #zj-list {
+      height: 190px;
+    }
+
+    #video-list {
+      height: 120px
+    }
+
+    .login-help {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .modal-body {
+      text-align: center;
+    }
+
+    .modal-body label {
+      width: 100px;
+    }
+
+    .modal-body input {
+      width: 200px;
+      height: 30px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body class="index-body">
+  <!-- 头部 -->
+  <section class="container-fluid main-header">
+  </section>
+  <!-- 轮播 -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-thr.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-one.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-two.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-fou.jpg)"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-thr.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-one.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-two.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(http://111.231.195.149/public/static/img/home-fou.jpg)"></div>
+    </div>
+  </div>
+
+  <section class="main-content">
+    <!-- 第一块 --->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <h4 class="index-bgh4 index-login-h4"><span>用户登录</span></h4>
+          <div class="login-main">
+            <div class="row">
+              <div class="col-xs-12">
+                <form class="login-form" action="" method="post">
+                  <div class="">
+                    <input class="form-control login-input login-user" name="user" type="text" placeholder="请输入手机号或用户名" autocomplete="off">
+                  </div>
+                  <div class="">
+                    <input class="form-control login-input login-pass" name="pass" type="password" placeholder="请输入密码" autocomplete="off">
+                  </div>
+                  <div class="">
+                    <input class="login-btn pull-left loginBtn" type="button" value="登录">
+                    <a href="register.html">
+    												<button class="login-btn pull-right regBtn" type="button">注册</button>
+    											</a>
+                  </div>
+                  <div class="login-help">
+                    <a class="help-link" href="javascript:void(0)" target="_blank">使用帮助</a>
+                    <a class="skip" href="javascript:;">个人中心</a>
+                    <a class="pull-right" href="#" data-toggle="modal" data-target="#myModal">忘记密码？</a>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <div class="count-wrap">
+            <div class="count-progress" hidden="true">
+              <div class="wrap">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info colorone" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 50%;">
+                    <div><span>28</span>人</div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info colortwo" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="min-width: 80%;">
+                    <div><span>668</span>人</div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info colorthr" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 50%;">
+                    <div><span>0</span>人</div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info colorfou" role="progressbar" aria-valuenow="800" aria-valuemin="0" aria-valuemax="1000" style="min-width: 80%;">
+                    <div><span>160</span>人</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="incon-wrap">
+            <ul>
+              <li>
+                <a href="feedback.html?type=1">
+                  <div class="img-wrap"><img src="http://111.231.195.149/public/static/img/incon-bg4.png" alt=""><span>办事咨询</span></div>
+                </a>
+              </li>
+              <li>
+                <a href="feedback.html?type=2">
+                  <div class="two">
+                    <div class="img-wrap"><img src="http://111.231.195.149/public/static/img/incon-bg3.png" alt=""><span>网上投诉</span></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="feedback.html?type=3">
+                  <div class="thr">
+                    <div class="img-wrap"><img src="http://111.231.195.149/public/static/img/incon-bg2.png" alt=""><span>我要建议</span></div>
+
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="feedback.html?type=4">
+                  <div class="fou">
+                    <div class="img-wrap"><img src="http://111.231.195.149/public/static/img/incon-bg1.png" alt=""><span>领导信箱</span></div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="index-right1" style="overflow:hidden;    margin-top: 15px;">
+            <div class="">
+              <h4 class="index-bgh4 index-main-h4"><span>信息公告</span> <small><a href="collist.html">更多...</a></small></h4>
+              <div class="twoblock margin-top-10">
+                <div class="twoblock-left hidden-xs hidden-sm" style="width:400px;">
+                  <div id="slideBox" class="slideBox">
+                    <div class="hd">
+                      <ul>
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                      </ul>
+                    </div>
+                    <div class="bd">
+                      <ul>
+                        <li><a href="javascript:;" target="_blank"><img src="http://111.231.195.149:8080/jhbpt/upload/files/20171230192742MeWSmwFn.png"></a></li>
+                        <li style="display: none;"><a href="javascript:;" target="_blank"><img src="http://111.231.195.149:8080/jhbpt/upload/files/20171218212030geIfvIpI.jpg"></a></li>
+                        <li style="display: none;"><a href="javascript:;" target="_blank"><img src="http://111.231.195.149:8080/jhbpt/upload/files/201712182138444MhnhBm1.jpg"></a></li>
+                      </ul>
+                    </div>
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+                  </div>
+                </div>
+                <div class="twoblock-right" style="width: 348px;">
+                  <div class="islide_top" id="home-lgnew">
+                  </div>
+                  <div class="islide-ul">
+                    <ul class="index-main-ul" id="mesgList">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="margin-top-20">
+              <h4 class="index-bgh4 index-main-h4"><span>寻医问药</span> <small><a href="view/tablelist.html"></a></small></h4>
+              <table class="table homeask-table">
+                <thead>
+                  <tr>
+                    <th>咨询类别</th>
+                    <th>咨询症状</th>
+                    <th>专家</th>
+                    <th>咨询时间</th>
+                    <th>评价</th>
+                  </tr>
+                </thead>
+                <!-- <tbody id="homeask">
+                  <tr>
+                    <td>其他咨询</td>
+                    <td>我于2018年11月20日左右在贵院呼吸二科作支气管镜是否感...</td>
+                    <td>陈玲</td>
+                    <td>2019-01-21</td>
+                    <td>未评价</td>
+                  </tr>
+                  <tr>
+                    <td>疾病诊疗</td>
+                    <td>能问一下利福喷丁具体怎么吃吗？还有我的异烟肼上次黄波医生说吃...</td>
+                    <td>陈玲</td>
+                    <td>2019-01-20</td>
+                    <td>未评价</td>
+                  </tr>
+                  <tr>
+                    <td>疾病诊疗</td>
+                    <td></td>
+                    <td>王医生</td>
+                    <td>2019-01-20</td>
+                    <td>未评价</td>
+                  </tr>
+                  <tr>
+                    <td>疾病诊疗</td>
+                    <td></td>
+                    <td>王医生</td>
+                    <td>2019-01-19</td>
+                    <td>未评价</td>
+                  </tr>
+                  <tr>
+                    <td>其他咨询</td>
+                    <td></td>
+                    <td>王医生</td>
+                    <td>2019-01-19</td>
+                    <td>未评价</td>
+                  </tr>
+                </tbody> -->
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第二块 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="index-main-list">
+            <h4 class="index-main-h4 index-list-h4">
+    								<img src="http://111.231.195.149/public/static/img/home (3).png" alt="">
+    								专科简介
+    								<small><a href="zklist.html">更多...</a></small>
+    							</h4>
+            <ul class="index-main-ul margin-top-20" id="shareList">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="index-main-list">
+            <h4 class="index-main-h4 index-list-h4">
+    								<img src="http://111.231.195.149/public/static/img/home (2).png" alt="">
+    								线上培训
+    								<small><a href="collist.html?col=5">更多...</a></small>
+    							</h4>
+            <ul class="index-main-ul margin-top-20" id="trainList"></ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="index-main-list">
+            <h4 class="index-main-h4 index-list-h4">
+    								<img src="http://111.231.195.149/public/static/img/home (1).png" alt="">
+    								微信栏目
+    								<small><a href="WeChat.html">更多...</a></small>
+    							</h4>
+            <ul class="index-main-ul margin-top-20" id="wechatList">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="index-main-list">
+            <h4 class="index-main-h4 index-list-h4">
+    								<img src="http://111.231.195.149/public/static/img/home (4).png" alt="">
+    								学术讲座
+    								<small><a href="chair.html">更多...</a></small></h4>
+            <ul class="index-main-ul margin-top-20" id="artilList">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="index-main-video">
+            <h4 class="index-main-h4 index-list-top"><span>专家简介</span> <small><a href="videolist.html">更多...</a></small></h4>
+            <div class="picMarquee-left">
+              <div class="hd">
+                <a class="next"></a>
+                <a class="prev"></a>
+              </div>
+              <div class="bd">
+                <div class="tempWrap" style="overflow:hidden; position:relative; width:1088px" id="tempWraps">
+                  <ul class="picList" id="zj-list" style="width: 3944px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="index-main-video">
+            <h4 class="index-main-h4 index-list-top"><span>视频播报</span> <small><a href="videolist.html">更多...</a></small></h4>
+            <div class="picMarquee-left">
+              <div class="hd">
+                <a class="next"></a>
+                <a class="prev"></a>
+              </div>
+              <div class="bd">
+                <div class="tempWrap" style="overflow:hidden; position:relative; width:1088px" id="videos">
+                  <ul class="picList" id="video-list" style="width: 2312px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -139px;">
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="index-main-link">
+            <h4 class="index-main-h4 index-list-top"><span>快速链接</span> <small><a href="videolist.html">更多...</a></small></h4>
+            <div class="block"></div>
+            <ul class="index-link-ul text-center">
+              <li><a href="http://www.zmchospital.com.cn" target="_blank">遵义医学院附属医院</a></li>
+              <li><a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a></li>
+              <li><a href="http://www.zmc.edu.cn" target="_blank">遵义医学院</a></li>
+              <li><a href="http://www.21wecan.com/" target="_blank">卫生人才网</a></li>
+              <li><a href="http://www.zunyi.gov.cn" target="_blank">遵义市政府网</a></li>
+              <li><a href="ttp://www.seezy.com" target="_blank">遵义万维网</a></li>
+              <li><a href="http://www.zyol.gz.cn" target="_blank">遵义在线</a></li>
+              <li><a href="http://www.zyfyjg.com" target="_blank">遵义医学院附属医院药物临床试验机构</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="main-footer">
+      <div class="main-footer-div">
+        Copyright © 2018 遵义医学院附属医院 All Rights Reserved.&nbsp;黔ICP备18005098号&nbsp; 技术支持：
+        <a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a>
+      </div>
+    </section>
+
+  </section>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">忘记密码</h4>
+        </div>
+        <div class="modal-body">
+          <label>用户名:</label><input type="input" class="user_name">
+          </br>
+          <label>当前身份证号：</label><input type="input" class="card">
+          </br>
+          <label>新密码：</label><input type="input" class="new_pass">
+          </br>
+          <label>确认密码：</label><input type="input" class="confirm_pass">
+          </br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary">提交更改</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+
+
+</body>
+<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./layer/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 0,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 0,
+    // autoplay: true,
+    effect: 'fade',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+</script>
+
+</html>
