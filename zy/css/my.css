@@ -1,0 +1,261 @@
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.col-xs-4, .col-xs-8 {
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+}
+
+.slimScrollDiv {
+  border: 1px solid #ccc;
+  height: 100%;
+  min-height: 500px;
+  background: #f0f0f0;
+}
+
+.user-info {
+  height: 100%;
+}
+
+.head-img {
+  padding: 0;
+  position: relative;
+  padding-top: 40px;
+}
+
+.operation {
+  width: 100px;
+  background: #fff;
+  position: absolute;
+  top: 95px;
+  left: 45px;
+  color: #48535c;
+  opacity: 1;
+  display: none;
+}
+
+.operation ul li {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.operation ul li:hover {
+  color: #337ab7
+}
+
+.head-portrait {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background: #f5f5f5;
+  color: #fff;
+  z-index: 999;
+  border-bottom: 1px solid #3333;
+}
+
+.head-portrait:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent url(http://111.231.195.149/public/static/img/home-fou.jpg) center center no-repeat;
+  filter: blur(1px);
+  z-index: -1;
+  background-size: 100% 150px;
+}
+
+.head-portrait img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 12
+}
+
+.left-nav {
+  text-align: center;
+}
+
+.one>li>a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #000;
+}
+
+.two>li>a {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  color: #797979;
+  font-size: 13px;
+}
+
+.two>li>a:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+.left-nav i {
+  font-size: 16px;
+  margin-right: 5px
+}
+
+.content {
+  background: #f0f0f0;
+  height: 100%;
+  min-height: 500px;
+  margin-bottom: 330px
+}
+
+.main-footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.one>li .on {
+  cursor: auto;
+}
+
+.uploadImg {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  width: 60px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+  border: 50%;
+  /* z-index: 999; */
+}
+
+.title {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 30px
+}
+
+.pass-box, .data-box {
+  text-align: center;
+  padding-top: 100px
+}
+
+.pass-box label, .data-box label {
+  width: 75px;
+  height: 30px;
+  line-height: 30px
+}
+
+.pass-box input, .data-box input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px
+}
+
+.affirm {
+  text-align: center;
+}
+
+.btn-success {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.position {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  background: red;
+}
+
+.user-msg {
+  height: 100%;
+}
+
+.password {
+  height: 100%;
+  min-height: 500px;
+  /* background-image: url(http://111.231.195.149/public/static/img/home-fou.jpg); */
+}
+
+.information {
+  display: none;
+  height: 100%;
+  min-height: 500px;
+  /* background-image: url(http://111.231.195.149/public/static/img/home-fou.jpg); */
+}
+
+.data-box select {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+.list-zjimg {
+  width: 50px;
+  height: 50px;
+}
+
+.listwrap {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.list-right {
+  width: 100%;
+  padding-left: 10px;
+  position: relative;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 800
+}
+
+.new-content {
+  width: 100%;
+  font-size: 13px;
+  color: #afb0b2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 0;
+}
+
+.box {
+  text-align: center;
+}
+
+.mesg-list {
+  display: none;
+}
+
+.badge {
+  display: none;
+}

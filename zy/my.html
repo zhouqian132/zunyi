@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./css/pagination.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/my.css">
+
+</head>
+
+<body class="index-body">
+  <!-- 头部 -->
+  <section class="container-fluid main-header">
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="user-info">
+        <div class="col-xs-4 col-md-2">
+          <div class="slimScrollDiv">
+            <div class="head-portrait">
+              <div class="head-img">
+                <div class="image">
+                  <!-- <img src="./img/tupian.jpg"> -->
+                </div>
+                <div class="operation">
+                  <ul>
+                    <li class="exit">
+                      <a href="javascript:;">退出登录</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input class="uploadImg" type="file" name="file" multiple id="file">
+            </div>
+            <div class="left-nav">
+              <ul class="one">
+                <li>
+                  <a href="javascript:;" class="on"><i class="iconfont icon-icon-test"></i>个人信息</a>
+                  <ul class="two">
+                    <li>
+                      <a href="javascript:;" data="password">修改密码</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">修改资料</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" class="position"><i class="iconfont icon-xiaoxi"></i>收到的信息<span class="badge">3</span></a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-8 col-md-10">
+          <div class="content">
+            <!-- 个人信息 -->
+            <div class="user-msg">
+              <!--修改密码  -->
+              <div class="password">
+                <div class="title">
+                  修改密码
+                </div>
+                <div class="pass-box">
+                  <label>原密码:</label><input type="password" class="old_pass">
+                  </br>
+                  <label>新密码:</label><input type="password" class="new_pass">
+                  </br>
+                  <label>确认密码:</label><input type="password" class="confirm_pass">
+                  </br>
+                </div>
+                <div class="affirm">
+                  <button type="button" class="btn-success" id="btn-success">确认修改</button>
+                </div>
+              </div>
+              <!-- 修改资料 -->
+              <div class="information">
+                <div class="title">
+                  修改信息
+                </div>
+                <div class="data-box">
+                  <label>手机:</label><input type="input" class="phone">
+                  </br>
+                  <label>邮箱:</label><input type="input" class="email">
+                  </br>
+                  <label>微信:</label><input type="input" class="weixin">
+                  </br>
+                  <label>性别:</label><select class="form-input edsel" name="user_sex">
+                    <option value="1">
+                      男
+                    </option>
+                    <option value="2">
+                      女
+                    </option>
+                    <option value="3">
+                      保密
+                    </option>
+                  </select>
+                  </br>
+                </div>
+                <div class="affirm">
+                  <button type="button" class="btn-success" id="btn-prosperity">确认修改</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 消息列表 -->
+            <div class="mesg-list">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-5">
+                    <div class="listwrap listwrap-1">
+                      <div class="list-left">
+                        <div class="width-zjimg"> <a href="##"><img class="list-zjimg" src="http://111.231.195.149/public/static/img/home-fou.jpg" alt=""></a> </div>
+                      </div>
+                      <div class="list-right">
+                        <div class="name">
+                          周琴
+                        </div>
+                        <div class="new-content">
+                          你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-5">
+                    <div class="listwrap listwrap-1">
+                      <div class="list-left">
+                        <div class="width-zjimg"> <a href="##"><img class="list-zjimg" src="http://111.231.195.149/public/static/img/home-fou.jpg" alt=""></a> </div>
+                      </div>
+                      <div class="list-right">
+                        <div class="name">
+                          周琴
+                        </div>
+                        <div class="new-content">
+                          你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="box">
+                <div id="pagination" class="pagination"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="main-footer">
+    <div class="main-footer-div">
+      Copyright © 2018 遵义医学院附属医院 All Rights Reserved.&nbsp;黔ICP备18005098号&nbsp; 技术支持：
+      <a href="http://www.gzminxin.com" target="_blank">贵州敏新生产力促进中心</a>
+    </div>
+  </div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./layer/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/pagination.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/my.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>
